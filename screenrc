@@ -1,0 +1,22 @@
+escape ``
+
+# termcapinfo * ti@:te@
+term xterm-color
+termcapinfo xterm-color|rxvt ti@:te@
+
+defscrollback 100000
+
+startup_message off
+vbell off
+
+hardstatus alwayslastline '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+
+bind c screen 1
+bind 0 select 10
+screen 1
+select 1
+
+altscreen on
+
+bindkey "\033[1;2D" prev
+bindkey "\033[1;2C" next
